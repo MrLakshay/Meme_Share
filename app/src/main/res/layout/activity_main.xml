@@ -4,7 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.ActionMenuView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/actionb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MEME SHARE"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+    </androidx.appcompat.widget.ActionMenuView>
 
     <ImageView
         android:id="@+id/meme_imageView"
@@ -29,10 +49,10 @@
         android:id="@+id/sharebtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:padding="32dp"
+        android:padding="20dp"
         android:text="@string/share_btn"
-        android:backgroundTint="#232316"
-        android:textColor="#81816C"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
         android:onClick="shareme"
         app:layout_constraintRight_toRightOf="@id/guideline2"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -44,9 +64,9 @@
         android:layout_height="wrap_content"
         android:text="@string/next_btn"
         android:onClick="nextmeme"
-        android:padding="32dp"
-        android:backgroundTint="#232316"
-        android:textColor="#81816C"
+        android:padding="20dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="@id/guideline2"/>
