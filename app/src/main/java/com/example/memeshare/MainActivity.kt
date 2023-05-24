@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         progress_Bar.visibility=View.VISIBLE
 
         val queue = Volley.newRequestQueue(this)
-        val url = "https://meme-api.herokuapp.com/gimme"
+        val url = "https://meme-api.com/gimme"
 
         val JsonObjectRequest = JsonObjectRequest(
             Request.Method.GET, url,null,
